@@ -20,6 +20,7 @@ WORKDIR /usr/src/app
 
 COPY ./requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
+RUN pip install uvicorn 
 
 FROM gpt-researcher-install AS gpt-researcher
 
@@ -31,5 +32,5 @@ USER gpt-researcher
 COPY --chown=gpt-researcher:gpt-researcher ./ ./
 
 EXPOSE 5000
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", $PORT]
+CMD uvicorn main:app --host 0.0.0.0 --port  $PORT
 
