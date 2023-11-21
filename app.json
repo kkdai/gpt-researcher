@@ -1,0 +1,14 @@
+{
+    "name": "GPT Researcher",
+    "description": "GPT Researcher is an autonomous agent designed for comprehensive online research on a variety of tasks.",
+    "env": {
+        "TAVILY_API_KEY": {
+            "description": "The API key for Tavily service",
+            "required": true
+        },
+        "OPENAI_API_KEY": {
+            "description": "The API key for OpenAI service",
+            "required": true
+        }
+    }
+}

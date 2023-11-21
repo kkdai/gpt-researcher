@@ -28,13 +28,21 @@ The agents leverage both gpt3.5-turbo and gpt-4-turbo (128K context) to complete
 </div>
 
 More specifically:
+
 - Create a domain specific agent based on research query or task.
 - Generate a set of research questions that together form an objective opinion on any given task.
 - For each research question, trigger a crawler agent that scrapes online resources for information relevant to the given task.
 - For each scraped resources, summarize based on relevant information and keep track of its sources.
 - Finally, filter and aggregate all summarized sources and generate a final research report.
 
+## Deploy this on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+- Input `OPENAI_API_KEY` and `TAVILY_API_KEY`.
+
 ## Demo
+
 <https://github.com/assafelovic/gpt-researcher/assets/13554167/a00c89a6-a295-4dd0-b58d-098a31c40fda>
 
 ## Tutorials
