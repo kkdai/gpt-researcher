@@ -10,5 +10,11 @@
             "description": "The API key for OpenAI service",
             "required": true
         }
+    },
+    "stack": "container",
+    "formation": {
+        "web": {
+            "quantity": 1
+        }
     }
 }
